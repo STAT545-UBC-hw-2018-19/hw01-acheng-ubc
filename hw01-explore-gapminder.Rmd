@@ -1,0 +1,35 @@
+---
+title: "STAT545 Assignment 1"
+author: "Alex"
+date: "September 18, 2018"
+output: github_document
+---
+
+# Load the Dataset
+I am choosing to explore the *gapminder* dataset for this assignment.
+
+```{r include=FALSE}
+library(gapminder)
+library(tidyverse)
+head(gapminder)
+```
+##Let's look at a quick summary of the variables
+```{r}
+summary(gapminder)
+```
+##How many countries are in this dataset?
+```{r}
+length(gapminder$country)
+```
+Not sure how many countries are in the world but I assume this is **all** of them.
+
+##What information does this dataset have on Canada?
+```{r warning=FALSE}
+filter(gapminder, country == "Canada")
+```
+##How much did Canada change between 1952 and 2007?
+```{r warning=FALSE}
+filter(gapminder, country == "Canada", year == "2007") - filter(gapminder, country == "Canada", year == "1952")
+```
+
+Over 55 years, life expectancy went up by 11.9 years, population increased by 18.6 million, and GDP per capita increased by 25 thousand dollars.
