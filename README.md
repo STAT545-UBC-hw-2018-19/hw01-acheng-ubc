@@ -3,7 +3,7 @@
 ## Assignment 1 Repository
 
 
-Hello, my name is **Alex Cheng** and I am in the *Experimental Medicine M.Sc. Program*.
+Hello, my name is **Alex Cheng** and I am in the *Experimental Medicine M.Sc. Program*. I am the pianist :musical_keyboard: for the **UBC Jazz Ensemble II**, check out our concert dates this year [here](https://music.ubc.ca/calendar/) :notes:!
 
 Here's a [link](http://stat545.com/Classroom/) to the STAT545 Classroom homepage!
 
@@ -19,7 +19,7 @@ Here's an ordered list of things I enjoy:
 3. The number 3
 4. Collections with less than 5 things in them
 
-I can make tables like this:
+I can also make tables like this:
 
 **Table 1.** *Pros and Cons of taking STAT545 this year*
 
@@ -34,6 +34,8 @@ Here's a checklist of things I need to do!
 - [x] Start making this README file
 - [ ] Finish this entire assignment
 - [ ] Think of a third thing to add to this checklist
-
+- [x] Continue procrastinating on Ontario med school applications
 
 Hey look ***emojis*** --> :sparkles: :sparkles: :sparkles:
+
+:musical_note: :saxophone: :guitar: :trumpet: :fire:
