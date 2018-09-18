@@ -7,7 +7,9 @@ Hello, my name is **Alex Cheng** and I am in the *Experimental Medicine M.Sc. Pr
 
 Here's a [link](http://stat545.com/Classroom/) to the STAT545 Classroom homepage!
 
+Here's another [link](https://github.com/STAT545-UBC-students/hw01-acheng-ubc) to this Assignment repository
 
+<!-- test to see if html comments show up in Github or not -->
 ### A bunch of random stuff to showcase Markdown language
 
 Here's an ordered list of things I enjoy:
@@ -29,8 +31,8 @@ I can make tables like this:
 
 Here's a checklist of things I need to do!
 - [x] Start making this README file
-- [] Finish this entire assignment
-- [] Think of a third thing to add to this checklist
+- [ ] Finish this entire assignment
+- [ ] Think of a third thing to add to this checklist
 
 
 Hey look ***emojis*** --> :sparkles: :sparkles: :sparkles:
