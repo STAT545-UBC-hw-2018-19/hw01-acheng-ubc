@@ -3,8 +3,8 @@ STAT545 Assignment 1
 Alex
 September 18, 2018
 
-Load the Dataset
-================
+Initializing the Dataset
+========================
 
 I am choosing to explore the *gapminder* dataset for this assignment.
 
@@ -77,3 +77,73 @@ filter(gapminder, country == "Canada", year == "2007") - filter(gapminder, count
     ## 1      NA        NA   55  11.903 18604557  24952.07
 
 Over 55 years, life expectancy went up by 11.9 years, population increased by 18.6 million, and GDP per capita increased by 25 thousand dollars.
+
+Some Preliminary Statistics Exploration
+=======================================
+
+Is Life expectancy correlated with GDP per capita?
+--------------------------------------------------
+
+``` r
+cor.test(gapminder$lifeExp, gapminder$gdpPercap)
+```
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  gapminder$lifeExp and gapminder$gdpPercap
+    ## t = 29.658, df = 1702, p-value < 2.2e-16
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  0.5515065 0.6141690
+    ## sample estimates:
+    ##       cor 
+    ## 0.5837062
+
+Yes, life expectancy positively correlates with GDP per capita.
+
+Is Life expectancy correlated with population?
+----------------------------------------------
+
+``` r
+cor.test(gapminder$lifeExp, gapminder$pop)
+```
+
+    ## 
+    ##  Pearson's product-moment correlation
+    ## 
+    ## data:  gapminder$lifeExp and gapminder$pop
+    ## t = 2.6854, df = 1702, p-value = 0.007314
+    ## alternative hypothesis: true correlation is not equal to 0
+    ## 95 percent confidence interval:
+    ##  0.01752303 0.11209600
+    ## sample estimates:
+    ##        cor 
+    ## 0.06495537
+
+Life expectancy does not seem to correlate strongly with population.
+
+Let's look at a plot of life expectancy and population
+
+``` r
+plot(gapminder$pop, gapminder$lifeExp,
+     xlab="Population (persons)",
+     ylab="Life Expectancy (years)")
+```
+
+![](hw01-explore-gapminder_files/figure-markdown_github/unnamed-chunk-8-1.png)
+
+Plot of Life Expectancy vs. Population looks very strange at first. Clumping near the y-axis is likely due to many different population sizes and time frames being present in this plot. What is quite intriguing is the clear positive correlation we see between 4e8 and 1.2e9 total population values, which is being masked by the clump of data values on the left.
+
+This is clear that we have a lot of confounders, likely due to the many different years in the dataset, as well as all kinds of countries with (by prior knowledge) vastly different standards of living.
+
+It is also quite likely that the trend we see from 4e8 to 1.2e9 are from just one or two countries.
+
+``` r
+gapminder.2007 <- filter(gapminder, year == "2007")
+plot(gapminder.2007$pop, gapminder.2007$lifeExp)
+```
+
+![](hw01-explore-gapminder_files/figure-markdown_github/unnamed-chunk-9-1.png)
+
+Looking at just one year we see that there is still a large clump of values at the y-axis; definitely still lots of confounding from having every country plotted.
