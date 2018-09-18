@@ -3,11 +3,20 @@
 ## Assignment 1 Repository
 
 
-Hello, my name is **Alex Cheng** and I am in the *Experimental Medicine M.Sc. Program*. I am the pianist :musical_keyboard: for the **UBC Jazz Ensemble II**, check out our concert dates this year [here](https://music.ubc.ca/calendar/) :notes:!
+Hello, my name is **Alex Cheng** and I am in the *Experimental Medicine M.Sc. Program*. I am the pianist :musical_keyboard: for the **UBC Jazz Ensemble II**, check out our concert dates this year [here](https://music.ubc.ca/calendar/)! :notes:
 
 Here's a [link](http://stat545.com/Classroom/) to the STAT545 Classroom homepage!
 
 Here's another [link](https://github.com/STAT545-UBC-students/hw01-acheng-ubc) to this Assignment repository!
+
+## What's here?
+| File | Description |
+|------|-------------|
+| README.md | Description of this repository + practicing R Markdown|
+| hw01-explore-gapminder.Rmd | R Markdown file for Assignment 1 |
+| hw01-explore-gapminder.md | Markdown file for Assignment 1 | 
+| hw01-instructios.md | Assignment 1 Instructions |
+
 
 <!-- test to see if html comments show up in Github or not -->
 ### A bunch of random stuff to showcase Markdown language
